@@ -98,6 +98,10 @@ p, li {
      margin: 20px;
  }
 
+#loupe-menu {
+    margin: 0;
+}
+
 
 #features {
     margin-bottom: 2em;
@@ -276,12 +280,13 @@ form .form-search button .btn {
     height:424px;
 }
 
-.article-header h1 {
+h1 {
     letter-spacing: 0.3em;
     font-size: 3em;
     line-height: 1em;
     padding-top: 0.2em;
     padding-bottom: 0.3em;
+    text-align: center;
 }
 
 .article-header h1:hover {
@@ -420,6 +425,82 @@ form .form-search button .btn {
     margin-bottom: 1em;
 }
 
+/******* RECHERCHE *******/
+
+div > .search-buttons {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    margin: 2em;
+}
+
+.btn {
+    background: none;
+    background-color: #eee;
+    filter: none;
+    border: solid 1px #333;
+    border-radius: 0px;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    color: #333;
+    font-family: 'Lato';
+    font-spacing: 0.3em;
+    font-size: 1.7em; 
+    height: 2em;
+    margin-bottom: 2em;
+}
+
+.btn:hover {
+    background-color: #fd482f;
+    color: #FFF;
+    text-decoration: none;
+    filter: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    
+}
+
+#categorie-thumb img {
+    height: 250px;
+    width: 250px;
+    margin: 1.5em;
+}
+
+.tri .image img {
+    width:100%;
+}
+
+.tri .image:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    bottom:0; left:0;
+    background:rgba(0,0,0,0.1);
+    opacity:0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.tri .image:after {
+    content: attr(data-content);
+    color:#fff;
+    font-family: 'Lato';
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.tri .image:hover:after {
+    opacity:1;
+}
 
 /******** LINKS *******/
 
